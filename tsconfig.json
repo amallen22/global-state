@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@repo/state/*": ["packages/state/*"],
+      "@repo/ui/*": ["packages/ui/*"],
+      "@repo/services/*": ["packages/services/*"]
+    }
+  }
+}

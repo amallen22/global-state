@@ -1,0 +1,17 @@
+image: mcr.microsoft.com/playwright:v1.44.0-jammy
+
+options:
+  max-time: 10 # minutos
+
+pipelines:
+  default:
+    - step:
+        name: Run Playwright E2E Tests
+        caches:
+          - node
+        script:
+          - corepack enable
+          - corepack prepare pnpm@latest --activate
+          - pnpm install
+          - pnpm exec playwright install --with-deps
+          - pnpm exec playwright test

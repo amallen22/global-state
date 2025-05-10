@@ -82,3 +82,11 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
 - [Configuration Options](https://turborepo.com/docs/reference/configuration)
 - [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+
+
+```
+pnpm dev     # Levanta todas las apps en paralelo
+pnpm test    # Ejecuta tests unitarios en todas las apps y paquetes
+pnpm lint    # Lint para todo el monorepo
+pnpm e2e     # Ejecuta Playwright E2E
+```

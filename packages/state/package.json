@@ -1,11 +1,12 @@
 {
-  "name": "@repo/eslint-config",
+  "name": "@repo/state",
   "version": "0.0.0",
+  "description": "Global state handler",
   "type": "module",
   "private": true,
-  "exports": {
-    "./base": "./base.js",
-    "./react-internal": "./react-internal.js"
+  "main": "store.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@eslint/js": "^9.26.0",
@@ -20,4 +21,3 @@
     "typescript-eslint": "^8.31.0"
   }
 }
-

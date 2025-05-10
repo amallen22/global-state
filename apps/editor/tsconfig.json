@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
+    "strict": true,
+    "allowJs": true,
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    // "baseUrl": ".", // Heredado o puede ser específico si es necesario
+    // "paths": { // Heredado de la raíz, puedes añadir paths específicos de la app aquí si es necesario
+    //   "*": ["types/*"] // Considera si este path genérico es realmente necesario o si puede ser más específico
+    // },
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "types": ["vite/client"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "index.tsx", "vite.config.ts"],
+  "exclude": ["node_modules"]
+}
