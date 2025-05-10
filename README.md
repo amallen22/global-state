@@ -90,3 +90,18 @@ pnpm test    # Ejecuta tests unitarios en todas las apps y paquetes
 pnpm lint    # Lint para todo el monorepo
 pnpm e2e     # Ejecuta Playwright E2E
 ```
+
+monorepo/
+├── apps/
+│   └── web/              ← única app con React Router
+├── packages/
+│   ├── editor/           ← componentes y lógica de /editor
+│   ├── user/             ← componentes y lógica de /user
+│   ├── share/            ← componentes y lógica de /share
+│   ├── state/            ← Zustand store compartido
+│   └── ui/               ← componentes compartidos (botones, layouts, etc.)
+
+
+Create new app
+
+```pnpm create vite apps/<app-name> --template react-ts```

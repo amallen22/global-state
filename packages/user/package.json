@@ -1,8 +1,9 @@
 {
-  "name": "editor",
+  "name": "@repo/user",
   "version": "0.1.0",
   "type": "module",
   "private": true,
+  "main": "./src/pages/User.tsx",
   "scripts": {
     "start": "vite",
     "dev": "vite --host",
@@ -12,27 +13,20 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@repo/services": "workspace:*",
-    "@repo/state": "workspace:*",
     "@repo/ui": "workspace:*",
+    "@repo/state": "workspace:*",
+    "@repo/services": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.15.3",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.1",
+    "eslint": "^9.26.0",
+    "typescript": "5.8.2"
   }
 }

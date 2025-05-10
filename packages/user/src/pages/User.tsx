@@ -2,7 +2,7 @@ import React from 'react'
 import { useGlobalStore } from '@repo/state/store'
 import { Button } from '@repo/ui'
 
-export const App = () => {
+export const User = () => {
   const profile = useGlobalStore((s) => s.profile)
   const setProfile = useGlobalStore((s) => s.setProfile)
 

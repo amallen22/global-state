@@ -17,6 +17,6 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "index.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "index.tsx", "**/*/index.html"],
   "exclude": ["node_modules"]
 }

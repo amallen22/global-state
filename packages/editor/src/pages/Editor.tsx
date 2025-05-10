@@ -3,7 +3,7 @@ import { useGlobalStore } from '@repo/state/store'
 import { generateAIContent } from '@repo/services/ia'
 import { Button } from '@repo/ui'
 
-export const App = () => {
+export const Editor = () => {
   const profile = useGlobalStore((s) => s.profile)
   const content = useGlobalStore((s) => s.content)
   console.log('content :: ', content)

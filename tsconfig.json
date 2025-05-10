@@ -4,7 +4,9 @@
     "paths": {
       "@repo/state/*": ["packages/state/*"],
       "@repo/ui/*": ["packages/ui/*"],
-      "@repo/services/*": ["packages/services/*"]
+      "@repo/services/*": ["packages/services/*"],
+      "@repo/editor/*": ["packages/editor/*"],
+      "@repo/user/*": ["packages/user/*"]
     }
   }
 }

@@ -4,7 +4,7 @@
   "globalDependencies": ["**/.env.*local"],
   "tasks": {
     "build": {
-      "dependsOn": ["apps/editor", "apps/user"],
+      "dependsOn": ["^build"],
       "outputs": ["dist/**", "build/**", "apps/editor/.cache/**", "apps/user/.cache/**"]
     },
     "lint": {},
